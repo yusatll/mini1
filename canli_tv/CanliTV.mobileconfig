@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>FullScreen</key>
+            <true/>
+            <key>IsRemovable</key>
+            <true/>
+            <key>Label</key>
+            <string>Canlı TV</string>
+            <key>PayloadDescription</key>
+            <string>Canlı TV WebClip Uygulamasi</string>
+            <key>PayloadDisplayName</key>
+            <string>Canlı TV</string>
+            <key>PayloadIdentifier</key>
+            <string>com.mini1.canlitv.webclip</string>
+            <key>PayloadType</key>
+            <string>com.apple.webClip.managed</string>
+            <key>PayloadUUID</key>
+            <string>746add99-cc5c-4867-990b-f93372156625</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>Precomposed</key>
+            <true/>
+            <key>URL</key>
+            <string>http://172.20.10.7:8000/canli_tv/index.html</string>
+        </dict>
+    </array>
+    <key>PayloadDisplayName</key>
+    <string>Canlı TV</string>
+    <key>PayloadIdentifier</key>
+    <string>com.mini1.canlitv</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>7f33213a-612f-4322-b33d-6d34b15c449a</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>

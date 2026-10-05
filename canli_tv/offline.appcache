@@ -1,0 +1,10 @@
+CACHE MANIFEST
+# Canli TV v1.0
+CACHE:
+index.html
+style.css
+tv.js
+channels.json
+
+NETWORK:
+*

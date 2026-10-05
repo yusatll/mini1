@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="tr" manifest="offline.appcache">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="PDF & Kitaplar">
+  <title>PDF & Kitaplar - iPad mini 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Üst Başlık & Kontroller -->
+    <header class="app-header">
+      <a href="../index.html" class="back-btn">‹ Ana Menü</a>
+      <h1 class="app-title">📚 PDF & Kitaplık</h1>
+      <div id="status-pill" class="status-pill">Hazır</div>
+    </header>
+
+    <!-- Bilgilendirme Kutusu -->
+    <div class="info-card">
+      <div class="info-icon">💡</div>
+      <div class="info-text">
+        Buradaki kitaplara dokunduğunuzda Safari'de hemen okuyabilir veya sağ üstten <strong>"iBooks'ta Aç" / "GoodReader'da Aç"</strong> diyerek internetsiz okumak üzere kalıcı kaydedebilirsiniz.
+      </div>
+    </div>
+
+    <!-- Mac'ten Yeni Kitap Yükleme Bölümü -->
+    <div class="upload-section">
+      <form id="upload-form" action="/api/upload-pdf" method="post" enctype="multipart/form-data">
+        <label class="upload-btn-label" for="pdf-file-input">
+          ➕ Mac'ten Yeni PDF / Kitap Yükle
+        </label>
+        <input type="file" id="pdf-file-input" name="file" accept=".pdf,.epub,.txt" style="display:none;">
+        <span id="upload-filename">Henüz dosya seçilmedi</span>
+      </form>
+    </div>
+
+    <!-- Mevcut Kitaplar Listesi -->
+    <h2 class="section-title">Kayıtlı Kitaplar ve Belgeler</h2>
+    <div class="books-list" id="books-container">
+      <!-- Dinamik olarak yüklenecek -->
+    </div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,203 @@
+/* Reset & Temel Ayarlar - iOS 9 Uyumlu */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  background-color: #0b0f19;
+  color: #f1f5f9;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  overflow-x: hidden;
+  padding-bottom: 30px;
+}
+
+.app-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 10px 14px;
+}
+
+/* Header */
+.app-header {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+  -webkit-align-items: center;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #1e293b;
+  margin-bottom: 12px;
+}
+
+.back-btn {
+  background-color: #1e293b;
+  color: #38bdf8;
+  text-decoration: none;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 8px 14px;
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.app-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f8fafc;
+}
+
+.status-pill {
+  font-size: 12px;
+  background-color: #10b981;
+  color: #ffffff;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* Sabit Video Player */
+.player-wrapper {
+  margin-bottom: 16px;
+  background-color: #000000;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+  border: 1px solid #1e293b;
+}
+
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 Oran */
+  background-color: #000;
+}
+
+.video-container video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.player-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 8px 12px;
+  background: -webkit-linear-gradient(bottom, rgba(0,0,0,0.8), rgba(0,0,0,0));
+  background: linear-gradient(to top, rgba(0,0,0,0.8), rgba(0,0,0,0));
+  pointer-events: none;
+}
+
+#channel-name-display {
+  font-size: 14px;
+  font-weight: 600;
+  color: #38bdf8;
+}
+
+/* Arama Çubuğu */
+.filter-bar {
+  margin-bottom: 16px;
+}
+
+.filter-bar input {
+  width: 100%;
+  padding: 12px 16px;
+  background-color: #1e293b;
+  border: 1px solid #334155;
+  border-radius: 10px;
+  color: #ffffff;
+  font-size: 16px;
+  outline: none;
+}
+
+.filter-bar input:focus {
+  border-color: #38bdf8;
+}
+
+/* Kanal Listesi Grid */
+.channels-grid {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: -6px;
+}
+
+.channel-card {
+  width: 25%; /* iPad mini yatay ekranda 4 sütun */
+  padding: 6px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+@media (max-width: 650px) {
+  .channel-card {
+    width: 33.33%; /* Dikeyde 3 sütun */
+  }
+}
+
+.channel-card-inner {
+  background-color: #161f30;
+  border: 1px solid #233047;
+  border-radius: 10px;
+  padding: 12px 8px;
+  text-align: center;
+  transition: background-color 0.15s, border-color 0.15s;
+  height: 100%;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.channel-card-inner:active, .channel-card-inner.active {
+  background-color: #1e3a5f;
+  border-color: #38bdf8;
+}
+
+.channel-logo {
+  max-width: 50px;
+  max-height: 34px;
+  margin-bottom: 6px;
+  object-fit: contain;
+}
+
+.channel-placeholder {
+  width: 40px;
+  height: 32px;
+  background-color: #233047;
+  border-radius: 6px;
+  margin-bottom: 6px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.channel-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #f1f5f9;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+}

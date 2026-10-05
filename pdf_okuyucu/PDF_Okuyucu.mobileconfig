@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>PayloadContent</key>
+    <array>
+        <dict>
+            <key>FullScreen</key>
+            <true/>
+            <key>IsRemovable</key>
+            <true/>
+            <key>Label</key>
+            <string>PDF Okuyucu</string>
+            <key>PayloadDescription</key>
+            <string>PDF Okuyucu WebClip Uygulamasi</string>
+            <key>PayloadDisplayName</key>
+            <string>PDF Okuyucu</string>
+            <key>PayloadIdentifier</key>
+            <string>com.mini1.pdfokuyucu.webclip</string>
+            <key>PayloadType</key>
+            <string>com.apple.webClip.managed</string>
+            <key>PayloadUUID</key>
+            <string>1697a4c8-5dfd-4ab6-a876-40935a0b75b2</string>
+            <key>PayloadVersion</key>
+            <integer>1</integer>
+            <key>Precomposed</key>
+            <true/>
+            <key>URL</key>
+            <string>http://172.20.10.7:8000/pdf_okuyucu/index.html</string>
+        </dict>
+    </array>
+    <key>PayloadDisplayName</key>
+    <string>PDF Okuyucu</string>
+    <key>PayloadIdentifier</key>
+    <string>com.mini1.pdfokuyucu</string>
+    <key>PayloadRemovalDisallowed</key>
+    <false/>
+    <key>PayloadType</key>
+    <string>Configuration</string>
+    <key>PayloadUUID</key>
+    <string>f8dcf61f-033b-4e6d-a2b0-acaabc9c028d</string>
+    <key>PayloadVersion</key>
+    <integer>1</integer>
+</dict>
+</plist>

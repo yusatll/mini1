@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Canlı TV">
+  <title>Canlı TV - iPad mini 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Üst Başlık & Kontroller -->
+    <header class="app-header">
+      <a href="../index.html" class="back-btn">‹ Ana Menü</a>
+      <h1 class="app-title">📺 Canlı TV</h1>
+      <div id="status-pill" class="status-pill">Hazır</div>
+    </header>
+
+    <!-- Sabit Oynatıcı Alanı -->
+    <section class="player-wrapper">
+      <div class="video-container">
+        <video id="tv-player" controls playsinline webkit-playsinline poster="../assets/tv_poster.svg"></video>
+        <div id="player-overlay" class="player-overlay">
+          <p id="channel-name-display">Bir kanal seçin</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Arama ve Filtreler -->
+    <div class="filter-bar">
+      <input type="text" id="search-input" placeholder="🔍 Kanal ara (örn: TRT, Haber, Spor)..." autocomplete="off">
+    </div>
+
+    <!-- Kanal Listesi Grid -->
+    <main class="channels-grid" id="channels-container">
+      <!-- Dinamik olarak JS ile yüklenecek -->
+    </main>
+  </div>
+
+  <script src="tv.js"></script>
+</body>
+</html>

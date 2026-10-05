@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="tr" manifest="offline.appcache">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  <meta name="apple-mobile-web-app-title" content="Lite YouTube">
+  <title>Lite YouTube - iPad mini 1</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="app-container">
+    <!-- Üst Başlık & Kontroller -->
+    <header class="app-header">
+      <a href="../index.html" class="back-btn">‹ Ana Menü</a>
+      <h1 class="app-title"><span class="yt-badge">▶</span> Lite YouTube</h1>
+      <div id="status-pill" class="status-pill">Hazır</div>
+    </header>
+
+    <!-- Sabit Oynatıcı Alanı -->
+    <section class="player-wrapper">
+      <div class="video-container" id="player-container">
+        <!-- Varsayılan kapak / video alanı -->
+        <div id="placeholder-box" class="placeholder-box">
+          <p>İzlemek istediğiniz videoyu arayın veya aşağıdan seçin.</p>
+        </div>
+      </div>
+      <div class="now-playing-bar" id="now-playing-bar" style="display:none;">
+        <h3 id="current-video-title">Video Başlığı</h3>
+        <p id="current-video-author">Kanal Adı</p>
+      </div>
+    </section>
+
+    <!-- Arama Çubuğu -->
+    <div class="search-section">
+      <form id="search-form">
+        <input type="text" id="search-input" placeholder="🔍 YouTube'da video arayın..." autocomplete="off">
+        <button type="submit" id="search-btn">Ara</button>
+      </form>
+    </div>
+
+    <!-- Hızlı Öneri / Popüler Butonları -->
+    <div class="quick-tags">
+      <button class="tag-btn active" data-query="Müzik">Müzik</button>
+      <button class="tag-btn" data-query="Belgesel">Belgesel</button>
+      <button class="tag-btn" data-query="Haberler">Haberler</button>
+      <button class="tag-btn" data-query="Nostalji Dizi">Nostalji</button>
+      <button class="tag-btn" data-query="Bilim">Bilim</button>
+    </div>
+
+    <!-- Video Sonuçları Grid -->
+    <main class="videos-grid" id="videos-container">
+      <div class="loading-state">Videolar yükleniyor...</div>
+    </main>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>

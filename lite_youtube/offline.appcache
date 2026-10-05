@@ -1,0 +1,9 @@
+CACHE MANIFEST
+# Lite YouTube v1.0
+CACHE:
+index.html
+style.css
+app.js
+
+NETWORK:
+*
