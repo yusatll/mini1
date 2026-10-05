@@ -12,7 +12,7 @@
   var tvPlayingTitle = document.getElementById('tv-playing-title');
   var tvSearch = document.getElementById('tv-search');
   var tvGrid = document.getElementById('tv-channels-grid');
-  var allChannels = [];
+  var allChannels = (typeof window.allChannels !== 'undefined' && window.allChannels && window.allChannels.length > 0) ? window.allChannels : [];
   var activeChCard = null;
 
   // YouTube Elements
